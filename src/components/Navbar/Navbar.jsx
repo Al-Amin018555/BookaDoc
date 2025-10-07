@@ -22,14 +22,14 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="text-3xl font-extrabold text-[#0F0F0F] flex items-center gap-2"> <img src={logo} className='w-10' alt="logo" /> BookaDoc</a>
+                    <a className="text-3xl font-extrabold text-[#0F0F0F] flex items-center gap-2"> <img src={logo} className='w-12' alt="logo" /> BookaDoc</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end hidden lg:flex">
                     <a className="btn rounded-4xl py-4 px-8 text-white font-bold bg-[#176AE5] ">Emergency</a>
                 </div>
                </div>
