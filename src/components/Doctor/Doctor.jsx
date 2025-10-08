@@ -1,19 +1,30 @@
-const Doctor = ({doctor}) => {
+const Doctor = ({ doctor }) => {
     console.log(doctor)
-    const {image,name} = doctor;
+    const { image, name, education, registration_number, experience } = doctor;
     return (
         <div>
-            <div className="card bg-base-100 shadow-sm">
+            <div className="card bg-base-100 rounded-2xl shadow-sm p-8">
                 <figure>
-                    <img
+                    <img className="h-[250px] w-[340px] rounded-2xl"
                         src={image}
                         alt="Shoes" />
                 </figure>
-                <div className="card-body">
-                    <h2 className="card-title">{name}</h2>
-                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
+                <div className="card-body p-0 space-y-3">
+                    <div className="flex gap-3 mt-4 font-medium text-[14px]">
+                        <div>
+                            <p className="text-[#09982F] rounded-[99px] bg-[rgba(9,152,47,0.1)] py-2 px-3">Available</p>
+                        </div>
+                        <div>
+                            <p className="text-[#176AE5] rounded-[99px] py-2 px-3 bg-[rgba(23,106,229,0.1)]">{experience} experience</p>
+                        </div>
+                    </div>
+                    <h2 className="card-title text-2xl font-extrabold text-[#0F0F0F] ">{name}</h2>
+                    <p className="border-b-2 pb-2 text-[rgba(15,15,15,0.6)] font-medium text-[18px] border-dashed ">{education}</p>
+                    <div>
+                        <p>{registration_number}</p>
+                    </div>
+                    <div className="card-actions">
+                        <button className="btn btn-outline btn-primary rounded-[99px] w-full">View Details</button>
                     </div>
                 </div>
             </div>
