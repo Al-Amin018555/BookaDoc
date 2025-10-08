@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://example.com/images/dr_sayeba_akhter.jpg",
+    "image": "https://i.ibb.co.com/60jgr0Xf/Dr-Sayeba-Akhter.jpg",
     "name": "Prof. Dr. Sayeba Akhter",
     "education": "MBBS, FCPS, FRCOG",
     "speciality": "Obstetrics & Gynecology",
@@ -14,7 +14,7 @@
   },
   {
     "id": 2,
-    "image": "https://example.com/images/dr_abm_abdullah.jpg",
+    "image": "https://i.ibb.co.com/Lzt10RfV/abdullah.jpg",
     "name": "Prof. Dr. ABM Abdullah",
     "education": "MBBS, MRCP (UK), FRCP (Edinburgh)",
     "speciality": "Internal Medicine",
@@ -27,7 +27,7 @@
   },
   {
     "id": 3,
-    "image": "https://example.com/images/dr_kamrul_islam.jpg",
+    "image": "https://i.ibb.co.com/p6yPV740/kamrul.jpg",
     "name": "Prof. Dr. Kamrul Islam",
     "education": "MBBS, MS, Fellowship in Urology",
     "speciality": "Urology (Kidney Transplant Surgery)",
@@ -40,7 +40,7 @@
   },
   {
     "id": 4,
-    "image": "https://example.com/images/dr_harishankar_das.jpg",
+    "image": "https://i.ibb.co.com/PGW2Hp0g/harishankar.jpg",
     "name": "Dr. Harishankar Das",
     "education": "MBBS, Postgraduate in Ophthalmology (Vienna)",
     "speciality": "Ophthalmology",
@@ -53,7 +53,7 @@
   },
   {
     "id": 5,
-    "image": "https://example.com/images/dr_obayedullah_baki.jpg",
+    "image": "https://i.ibb.co.com/1tF9Q0Jc/obayedullah.jpg",
     "name": "Dr. Mollah Obayedullah Baki",
     "education": "MBBS, Fellowship in Oncology",
     "speciality": "Oncology",
@@ -66,7 +66,7 @@
   },
   {
     "id": 6,
-    "image": "https://example.com/images/dr_lutfor_rahman.jpg",
+    "image": "https://i.ibb.co.com/1tF9Q0Jc/obayedullah.jpg",
     "name": "Prof. Dr. Lutfor Rahman",
     "education": "MBBS, MS (Cardiac Surgery)",
     "speciality": "Cardiac Surgery",
@@ -79,7 +79,7 @@
   },
   {
     "id": 7,
-    "image": "https://example.com/images/dr_nurunnahar_fatema_begum.jpg",
+    "image": "https://i.ibb.co.com/WNMTrXDH/Dr-Nurunnahar-Fatema-Begum.jpg",
     "name": "Prof. Dr. Nurunnahar Fatema Begum",
     "education": "MBBS, FCPS (Pediatric Cardiology)",
     "speciality": "Pediatric Cardiology",
@@ -92,7 +92,7 @@
   },
   {
     "id": 8,
-    "image": "https://example.com/images/dr_zahid_hossain.jpg",
+    "image": "https://i.ibb.co.com/TxPx8fVn/zahid.jpg",
     "name": "Dr. A. Z. M. Zahid Hossain",
     "education": "MBBS, FCPS, MRCP",
     "speciality": "General Medicine & Political Medicine",
@@ -105,7 +105,7 @@
   },
   {
     "id": 9,
-    "image": "https://example.com/images/dr_sumit_chandra_nath.jpg",
+    "image": "https://i.ibb.co.com/tP8N3QNH/sumit.jpg",
     "name": "Dr. Sumit Chandra Nath",
     "education": "MBBS, Postgraduate Diploma",
     "speciality": "General Practitioner",
@@ -118,7 +118,7 @@
   },
   {
     "id": 10,
-    "image": "https://example.com/images/dr_omair_abdullah_asif.jpg",
+    "image": "https://i.ibb.co.com/k6PWSNvQ/asif.jpg",
     "name": "Dr. Omair Abdullah Asif",
     "education": "MBBS, MPhil",
     "speciality": "Pharmacology / Research",
@@ -131,7 +131,7 @@
   },
   {
     "id": 11,
-    "image": "https://example.com/images/dr_mahy_murtayes_jubayer.jpg",
+    "image": "https://i.ibb.co.com/rRZQ1Dwq/jubayer.png",
     "name": "Dr. Mahy Md. Murtayes Jubayer",
     "education": "MBBS, FCPS (Medicine)",
     "speciality": "Medicine Specialist",
@@ -144,7 +144,7 @@
   },
   {
     "id": 12,
-    "image": "https://example.com/images/dr_rakibul_hasan.jpg",
+    "image": "https://i.ibb.co.com/vCbnXGjv/rakibul.jpg",
     "name": "Dr. Md. Rakibul Hasan",
     "education": "MBBS, BCS (Health), Diploma Cardiology",
     "speciality": "Cardiology",
