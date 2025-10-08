@@ -8,7 +8,7 @@ const Navbar = () => {
         <li><a>Contact Us</a></li>
     </>
     return (
-        <div>
+        <div className=' sticky top-0 z-10'>
             <div className="bg-base-100 shadow-sm">
                <div className='navbar max-w-7xl mx-auto'>
                  <div className="navbar-start">
