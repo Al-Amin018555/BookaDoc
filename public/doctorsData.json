@@ -10,7 +10,11 @@
     "designation": "Professor",
     "workplace": "Dhaka Medical College & Hospital",
     "fee": 1500,
-    "availability": ["Monday", "Wednesday", "Friday"]
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ]
   },
   {
     "id": 2,
@@ -23,7 +27,10 @@
     "designation": "Medicine Specialist",
     "workplace": "Central Hospital Limited, Dhaka",
     "fee": 2000,
-    "availability": ["Tuesday", "Thursday"]
+    "availability": [
+      "Tuesday",
+      "Thursday"
+    ]
   },
   {
     "id": 3,
@@ -36,7 +43,11 @@
     "designation": "Chief Surgeon",
     "workplace": "Centre for Kidney Diseases and Urology Hospital, Dhaka",
     "fee": 5000,
-    "availability": ["Monday", "Wednesday", "Saturday"]
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Saturday"
+    ]
   },
   {
     "id": 4,
@@ -49,7 +60,10 @@
     "designation": "Senior Consultant Ophthalmologist",
     "workplace": "Mymensingh Medical College & Hospital",
     "fee": 1800,
-    "availability": ["Tuesday", "Thursday"]
+    "availability": [
+      "Tuesday",
+      "Thursday"
+    ]
   },
   {
     "id": 5,
@@ -62,7 +76,11 @@
     "designation": "Director",
     "workplace": "National Institute of Cancer Research & Hospital, Dhaka",
     "fee": 3000,
-    "availability": ["Monday", "Wednesday", "Friday"]
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ]
   },
   {
     "id": 6,
@@ -75,7 +93,11 @@
     "designation": "Chief Cardiac Surgeon",
     "workplace": "Labaid Cardiac Hospital, Dhaka",
     "fee": 7000,
-    "availability": ["Tuesday", "Thursday", "Saturday"]
+    "availability": [
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ]
   },
   {
     "id": 7,
@@ -88,7 +110,10 @@
     "designation": "Head of Department",
     "workplace": "CMH Dhaka",
     "fee": 5500,
-    "availability": ["Monday", "Wednesday"]
+    "availability": [
+      "Monday",
+      "Wednesday"
+    ]
   },
   {
     "id": 8,
@@ -101,7 +126,10 @@
     "designation": "Consultant Physician",
     "workplace": "Private Clinic, Dhaka",
     "fee": 2500,
-    "availability": ["Tuesday", "Friday"]
+    "availability": [
+      "Tuesday",
+      "Friday"
+    ]
   },
   {
     "id": 9,
@@ -114,7 +142,11 @@
     "designation": "GP",
     "workplace": "Dhaka Clinic",
     "fee": 800,
-    "availability": ["Monday", "Tuesday", "Thursday"]
+    "availability": [
+      "Monday",
+      "Tuesday",
+      "Thursday"
+    ]
   },
   {
     "id": 10,
@@ -127,12 +159,15 @@
     "designation": "Lecturer / Researcher",
     "workplace": "University of Rajshahi",
     "fee": 1200,
-    "availability": ["Wednesday", "Saturday"]
+    "availability": [
+      "Wednesday",
+      "Saturday"
+    ]
   },
   {
     "id": 11,
     "image": "https://i.ibb.co.com/rRZQ1Dwq/jubayer.png",
-    "name": "Dr. Mahy Md. Murtayes Jubayer",
+    "name": "Dr. Mahy Md. Murtayes",
     "education": "MBBS, FCPS (Medicine)",
     "speciality": "Medicine Specialist",
     "experience": "7 years",
@@ -140,19 +175,27 @@
     "designation": "Specialist Physician",
     "workplace": "Dhaka Hospital",
     "fee": 1500,
-    "availability": ["Tuesday", "Thursday", "Friday"]
+    "availability": [
+      "Tuesday",
+      "Thursday",
+      "Friday"
+    ]
   },
   {
     "id": 12,
     "image": "https://i.ibb.co.com/vCbnXGjv/rakibul.jpg",
     "name": "Dr. Md. Rakibul Hasan",
-    "education": "MBBS, BCS (Health), Diploma Cardiology",
+    "education": "MBBS, FCPS (Cardiology)",
     "speciality": "Cardiology",
     "experience": "12 years",
     "registration_number": "BMDC-123456",
     "designation": "Assistant Professor",
     "workplace": "Khulna Medical College & Hospital",
     "fee": 2200,
-    "availability": ["Monday", "Wednesday", "Saturday"]
+    "availability": [
+      "Monday",
+      "Wednesday",
+      "Saturday"
+    ]
   }
 ]

@@ -1,6 +1,8 @@
+import { useState } from "react";
 import Doctor from "../../components/Doctor/Doctor";
 
-const Doctors = ({data}) => {
+const Doctors = ({ data }) => {
+    const [viewAllDoctor, setViewAllDoctor] = useState(false);
     return (
         <div className="max-w-7xl mx-auto my-20">
             <div className="text-center space-y-4 text-[#0F0F0F]">
@@ -9,8 +11,13 @@ const Doctors = ({data}) => {
             </div>
             <div className="mt-4 lg:mt-8 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {
-                    data.slice(0,6).map(doctor => <Doctor key={doctor.id} doctor={doctor}></Doctor>)
+                    viewAllDoctor ? data.map(doctor => <Doctor key={doctor.id} doctor={doctor}></Doctor>) : data.slice(0, 6).map(doctor => <Doctor key={doctor.id} doctor={doctor}></Doctor>)
                 }
+
+
+            </div>
+            <div className="text-center mt-4 lg:mt-12 ">
+                <button onClick={() => setViewAllDoctor(!viewAllDoctor)} className="rounded-[99px] cursor-pointer py-4 px-8 text-white font-bold bg-[#176AE5]">View All Doctor</button>
             </div>
         </div>
     );

@@ -13,7 +13,7 @@ const Banner = () => {
                     </div>
                     <div className="max-w-3xl mx-auto hidden lg:flex items-center gap-4">
                         <input className="bg-white p-4 h-[52px] flex-1 rounded-4xl" placeholder="Search any doctor...." type="text" />
-                        <button className="rounded-4xl font-bold cursor-pointer text-white h-[52px] bg-[#176AE5] py-3 px-7">Search Now</button>
+                        <button className="rounded-[99px] font-bold cursor-pointer text-white h-[52px] bg-[#176AE5] py-3 px-7">Search Now</button>
 
                     </div>
                     <div className='flex flex-col lg:flex-row gap-6 mt-6'>
