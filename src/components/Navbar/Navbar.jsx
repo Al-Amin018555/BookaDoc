@@ -1,8 +1,9 @@
+import { Link } from 'react-router';
 import logo from '../../assets/logo.png';
 
 const Navbar = () => {
     const links = <>
-        <li><a>Home</a></li>
+       <Link to='/'><li><a>Home</a></li></Link> 
         <li><a>My Bookings</a></li>
         <li><a>Blogs</a></li>
         <li><a>Contact Us</a></li>        
@@ -22,7 +23,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="text-3xl font-extrabold text-[#0F0F0F] flex items-center gap-2"> <img src={logo} className='w-12' alt="logo" /> BookaDoc</a>
+                    <Link to='/'><a className="text-3xl font-extrabold text-[#0F0F0F] flex items-center gap-2"> <img src={logo} className='w-12' alt="logo" /> BookaDoc</a></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
