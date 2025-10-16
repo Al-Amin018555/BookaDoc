@@ -6,7 +6,10 @@ const Root = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <Outlet></Outlet>
+            <div className="bg-[#EEEEEE]">
+
+                <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );

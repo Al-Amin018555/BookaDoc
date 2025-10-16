@@ -5,7 +5,7 @@ const Navbar = () => {
         <li><a>Home</a></li>
         <li><a>My Bookings</a></li>
         <li><a>Blogs</a></li>
-        <li><a>Contact Us</a></li>
+        <li><a>Contact Us</a></li>        
     </>
     return (
         <div className=' sticky top-0 z-10'>
