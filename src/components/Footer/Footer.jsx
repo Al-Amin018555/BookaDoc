@@ -2,12 +2,13 @@ import logo from '../../assets/logo.png'
 import facebook from '../../assets/facebook.png'
 import linkedin from '../../assets/linkedin.png'
 import github from '../../assets/github.png'
+import { Link } from 'react-router';
 const Footer = () => {
     const links = <>
-        <li><a>Home</a></li>
-        <li><a>My Bookings</a></li>
-        <li><a>Blogs</a></li>
-        <li><a>Contact Us</a></li>
+        <Link to='/'><li>Home</li></Link>
+        <li>My Bookings</li>
+        <li>Blogs</li>
+        <li>Contact Us</li>
     </>
     return (
         <footer className="footer footer-horizontal footer-center bg-white shadow-sm text-base-content rounded py-10 px-10 lg:py-24 lg:px-20">
@@ -19,18 +20,26 @@ const Footer = () => {
                     {links}
                 </ul>
             </nav>
-           
+
             <nav>
                 <div className="grid grid-flow-col gap-4">
-                    <a href='https://www.facebook.com/mdalamin.510400' target='_blank'>
-                        <img src={facebook} alt="" />
-                    </a>
-                    <a href='https://www.linkedin.com/in/md-al-amin-475792358/' target='_blank'>
-                        <img src={linkedin} alt="" />
-                    </a>
-                    <a href='https://github.com/Al-Amin018555' target='_blank'>
-                        <img src={github} className='w-12' alt="" />
-                    </a>
+                    <Link to="https://www.facebook.com/mdalamin.510400" target='_blank'>
+                        <h3>
+                            <img src={facebook} alt="" />
+                        </h3>
+                    </Link>
+                    <Link to='https://www.linkedin.com/in/md-al-amin-475792358/' target='_blank' >
+                        <h3>
+                            <img src={linkedin} alt="" />
+                        </h3>
+                    </Link>
+                    <Link to="https://github.com/Al-Amin018555" target='_blank'>
+                        <h3 >
+                            <img src={github} className='w-12' alt="" />
+                        </h3>
+                    </Link>
+
+
                 </div>
             </nav>
 

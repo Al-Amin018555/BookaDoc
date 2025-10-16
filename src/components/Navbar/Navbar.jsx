@@ -3,10 +3,10 @@ import logo from '../../assets/logo.png';
 
 const Navbar = () => {
     const links = <>
-       <Link to='/'><li><a>Home</a></li></Link> 
-        <li><a>My Bookings</a></li>
-        <li><a>Blogs</a></li>
-        <li><a>Contact Us</a></li>        
+       <Link to='/'><li className='mr-2'>Home</li></Link> 
+        <li className='mr-2'>My Bookings</li>
+        <li className='mr-2'>Blogs</li>
+        <li className='mr-2'>Contact Us</li>        
     </>
     return (
         <div className=' sticky top-0 z-10'>
@@ -23,7 +23,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <Link to='/'><a className="text-3xl font-extrabold text-[#0F0F0F] flex items-center gap-2"> <img src={logo} className='w-12' alt="logo" /> BookaDoc</a></Link>
+                    <Link to='/'><h4 className="text-3xl font-extrabold text-[#0F0F0F] flex items-center gap-2"> <img src={logo} className='w-12' alt="logo" /> BookaDoc</h4></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -31,7 +31,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end hidden lg:flex">
-                    <a className="rounded-[99px] cursor-pointer py-4 px-8 text-white font-bold bg-[#176AE5]">Emergency</a>
+                    <button className="rounded-[99px] cursor-pointer py-4 px-8 text-white font-bold bg-[#176AE5]">Emergency</button>
                 </div>
                </div>
             </div>

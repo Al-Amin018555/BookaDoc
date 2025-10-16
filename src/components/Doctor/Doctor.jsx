@@ -1,20 +1,20 @@
 import { Link } from "react-router";
 
 const Doctor = ({ doctor }) => {
-    console.log(doctor)
-    const { image, name, education, registration_number, experience } = doctor;
+    
+    const {id, image, name, education, registration_number, experience } = doctor;
     return (
         <div>
             <div className="card bg-base-100 rounded-2xl shadow-sm p-8">
                 <figure>
                     <img className="h-[250px] w-[340px] rounded-2xl"
-                        src={image}
+                        src={image}     
                         alt="Shoes" />
                 </figure>
                 <div className="card-body p-0 space-y-3">
                     <div className="flex gap-3 mt-4 font-medium text-[14px]">
                         <div>
-                            <p className="text-[#09982F] rounded-[99px] bg-[rgba(9,152,47,0.1)] py-2 px-3">Available</p>
+                        <p className="text-[#09982F] rounded-[99px] bg-[rgba(9,152,47,0.1)] py-2 px-3">Available</p>
                         </div>
                         <div>
                             <p className="text-[#176AE5] rounded-[99px] py-2 px-3 bg-[rgba(23,106,229,0.1)]">{experience} experience</p>
@@ -26,7 +26,7 @@ const Doctor = ({ doctor }) => {
                         <p>{registration_number}</p>
                     </div>
                     <div className="card-actions">
-                        <Link to='doctorDetails'><button className="btn btn-outline btn-primary rounded-[99px] w-full">View Details</button></Link>
+                        <Link to={`/doctorDetails/${id}`}><button className="btn btn-outline btn-primary rounded-[99px] w-full">View Details</button></Link>
                     </div>
                 </div>
             </div>
