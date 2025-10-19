@@ -36,11 +36,11 @@ const DoctorDetails = () => {
                         <div className="border-t-1 py-4 border-b-1 border-dashed  ">
                             <p className="font-medium text-[18px] flex gap-2 items-center text-[rgba(15,15,15,0.7)]"> <img src={regLogo} alt="" /> Reg No: {registration_number}</p>
                         </div>
-                        <div className="flex">
+                        <div className="flex items-center">
                             <p className="font-bold text-[#0F0F0F]">Availability</p>
-                            <div className="flex border-2 w-full ml-2">
+                            <div className="flex w-full space-x-4 ml-2">
                                 {
-                                    availability.map((availble, idx) => <p key={idx}>{availble}</p>)
+                                    availability.map((availble, idx) => <div className="text-[#FFA000] font-medium bg-[rgba(255,160,0,0.1)] rounded-[99px] px-4 py-2" key={idx}>{availble}</div>)
                                 }
                             </div>
 
