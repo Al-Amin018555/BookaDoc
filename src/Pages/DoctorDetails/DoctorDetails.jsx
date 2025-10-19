@@ -38,9 +38,11 @@ const DoctorDetails = () => {
                         <div className="border-t-1 py-4 border-b-1 border-dashed  ">
                             <p className="font-medium text-[18px] flex gap-2 items-center text-[rgba(15,15,15,0.7)]"> <img src={regLogo} alt="" /> Reg No: {registration_number}</p>
                         </div>
-                        <div className="flex items-center">
-                            <p className="font-bold text-[#0F0F0F]">Availability</p>
-                            <div className="flex w-full space-x-4 ml-2">
+                        <div className="flex flex-col items-center md:flex-row">
+                            <div>
+                                <p className="font-bold mb-4 md:mb-0 text-[#0F0F0F]">Availability</p>
+                            </div>
+                            <div className="flex space-x-4 ml-2">
                                 {
                                     availability.map((availble, idx) => <div className="text-[#FFA000] font-medium bg-[rgba(255,160,0,0.1)] border-1 border-[rgba(255,160,0,0.2)] rounded-[99px] px-4 py-2" key={idx}>{availble}</div>)
                                 }
@@ -65,7 +67,7 @@ const DoctorDetails = () => {
                         <div>
                             <p className="bg-[rgba(9,152,47,0.1)] border-1 border-[rgba(9,152,47,0.2)] font-medium text-[#09982F] textarea-md py-2 px-4 rounded-[99px]">Doctor Available Today</p>
                         </div>
-                </div>
+                    </div>
 
                     <div className="flex mt-4 items-center max-w-[975px] border-1 border-[rgba(255,160,0,0.2)] gap-2 px-4 py-2 bg-[rgba(255,160,0,0.1)] text-[#FFA000] font-medium rounded-[99px]">
 
