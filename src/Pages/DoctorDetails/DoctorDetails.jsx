@@ -20,13 +20,15 @@ const DoctorDetails = () => {
             <div>
                 <div className="card p-8 flex flex-col lg:flex-row  bg-base-100 shadow-sm">
                     <figure>
-                        <img className="rounded-xl h-full"
+                        <img className="rounded-xl h-[350px]"
                             src={image}
                             alt="doctor image" />
                     </figure>
                     <div className="card-body space-y-3">
-                        <h2 className="card-title font-extrabold text-2xl text-[#0F0F0F] lg:text-3xl">{name}</h2>
-                        <p className="font-medium text-[18px] text-[rgba(15,15,15,0.6)]">{education}</p>
+                        <div>
+                            <h2 className="card-title font-extrabold text-2xl text-[#0F0F0F] lg:text-3xl">{name}</h2>
+                            <p className="font-medium text-[18px] text-[rgba(15,15,15,0.6)]">{education}</p>
+                        </div>
                         <div>
                             <p className="font-medium text-xl text-[rgba(15,15,15,0.5)]">Working at</p>
                             <p className="font-bold text-xl text-[#0F0F0F]">{workplace}</p>
@@ -38,7 +40,7 @@ const DoctorDetails = () => {
                             <p className="font-bold text-[#0F0F0F]">Availability</p>
                             <div className="flex border-2 w-full ml-2">
                                 {
-                                    availability.map(availble => <p>{availble}</p>)
+                                    availability.map((availble, idx) => <p key={idx}>{availble}</p>)
                                 }
                             </div>
 
