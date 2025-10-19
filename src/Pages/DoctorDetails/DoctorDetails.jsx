@@ -71,7 +71,7 @@ const DoctorDetails = () => {
 
                     <div className="flex mt-4 items-center max-w-[975px] border-1 border-[rgba(255,160,0,0.2)] gap-2 px-4 py-2 bg-[rgba(255,160,0,0.1)] text-[#FFA000] font-medium rounded-[99px]">
 
-                        <PiWarningCircleThin className="text-[20px] " />
+                        <PiWarningCircleThin size={20}  />
                         <p>Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
 
                     </div>

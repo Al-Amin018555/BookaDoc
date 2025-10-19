@@ -25,8 +25,8 @@ const Doctor = ({ doctor }) => {
                     <div>
                         <p>{registration_number}</p>
                     </div>
-                    <div className="card-actions">
-                        <Link to={`/doctorDetails/${id}`}><button className="btn btn-outline btn-primary rounded-[99px] w-full">View Details</button></Link>
+                    <div>
+                        <Link to={`/doctorDetails/${id}`}><button className=" w-full border-1 py-3 text-[#176AE5] hover:bg-[rgba(23,106,229,1)] hover:text-white font-bold text-[20px] rounded-[99px]">View Details</button></Link>
                     </div>
                 </div>
             </div>
