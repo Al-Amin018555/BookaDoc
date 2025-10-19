@@ -22,7 +22,7 @@ const DoctorDetails = () => {
             <div>
                 <div className="card rounded-3xl p-8 flex flex-col lg:flex-row  bg-base-100 shadow-sm">
                     <figure>
-                        <img className="rounded-xl h-[350px]"
+                        <img className="rounded-xl md:h-[350px]"
                             src={image}
                             alt="doctor image" />
                     </figure>
@@ -71,14 +71,16 @@ const DoctorDetails = () => {
 
                     <div className="flex mt-4 items-center max-w-[975px] border-1 border-[rgba(255,160,0,0.2)] gap-2 px-4 py-2 bg-[rgba(255,160,0,0.1)] text-[#FFA000] font-medium rounded-[99px]">
 
-                        <PiWarningCircleThin size={20}  />
+                        <PiWarningCircleThin size={20} />
                         <p>Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
 
                     </div>
 
-                    <div className="card-actions p-6 mt-4">
-                        <button className="cursor-pointer py-3 font-bold bg-[#176AE5] text-white text-[20px] rounded-[99px] w-full">Book Appointment Now</button>
+                    <div className="p-6 mt-4">
+                        <button className="cursor-pointer py-3 b font-bold bg-[#176AE5] text-white md:text-[20px] rounded-[99px] w-full">Book Appointment Now</button>
+
                     </div>
+
                 </div>
             </div>
 
