@@ -12,18 +12,18 @@ const getStoredAppointment = () =>{
     return [];
 }
 
-const saveToAppointment = id =>{
+const saveToAppointment = (id,name) =>{
 
     const storedAppointment = getStoredAppointment();
 
     if(storedAppointment.includes(id)){
-        toast.error("Already booked an appointment with this doctor")
+        toast.error(`Already booked an apponitment with ${name}`)
     }
     else{
         storedAppointment.push(id);
         const storedAppointmentStr = JSON.stringify(storedAppointment);
         localStorage.setItem('appointment-list',storedAppointmentStr);
-        toast.success("Successfully stored into appointments")
+        toast.success(`Booked an appoint with ${name}`)
     }
 }
 

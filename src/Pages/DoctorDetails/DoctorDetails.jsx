@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router";
+import { Link, useLoaderData, useParams } from "react-router";
 import regLogo from '../../assets/reg.png'
 import { PiWarningCircleThin } from "react-icons/pi";
 import { saveToAppointment } from "../../Utility/addToLS";
@@ -78,7 +78,7 @@ const DoctorDetails = () => {
                     </div>
 
                     <div className="p-6 mt-4">
-                        <button onClick={() => saveToAppointment(id)} className="cursor-pointer py-3 b font-bold bg-[#176AE5] text-white md:text-[20px] rounded-[99px] w-full">Book Appointment Now</button>
+                        <Link to='/appointments'><button onClick={() => saveToAppointment(id,name)} className="cursor-pointer py-3 b font-bold bg-[#176AE5] text-white md:text-[20px] rounded-[99px] w-full">Book Appointment Now</button></Link>
 
                     </div>
 
