@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Root from "../Root/Root";
 import Home from "../Pages/Home/Home";
 import DoctorDetails from "../Pages/DoctorDetails/DoctorDetails";
+import Appointments from "../Pages/Appointments/Appointments";
 
 export const router = createBrowserRouter([
   {
@@ -18,7 +19,12 @@ export const router = createBrowserRouter([
         path: 'doctorDetails/:doctorId',
         loader: () => fetch('doctorsData.json'),
         Component: DoctorDetails,
-      }
+      },
+      {
+        path: 'appointments',
+        loader: () => fetch('doctorsData.json'),
+        Component: Appointments,
+      },
     ],
   },
 ]);

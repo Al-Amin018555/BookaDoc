@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router";
 import regLogo from '../../assets/reg.png'
 import { PiWarningCircleThin } from "react-icons/pi";
+import { saveToAppointment } from "../../Utility/addToLS";
 
 
 const DoctorDetails = () => {
@@ -10,7 +11,7 @@ const DoctorDetails = () => {
 
     const singleDoctor = data.find(doctor => doctor.id === doctorIdInt);
     console.log(singleDoctor);
-    const { image, name, education, workplace, registration_number, availability, fee } = singleDoctor;
+    const { id, image, name, education, workplace, registration_number, availability, fee } = singleDoctor;
     return (
         <div className="max-w-7xl mx-auto space-y-4 py-7">
 
@@ -77,7 +78,7 @@ const DoctorDetails = () => {
                     </div>
 
                     <div className="p-6 mt-4">
-                        <button className="cursor-pointer py-3 b font-bold bg-[#176AE5] text-white md:text-[20px] rounded-[99px] w-full">Book Appointment Now</button>
+                        <button onClick={() => saveToAppointment(id)} className="cursor-pointer py-3 b font-bold bg-[#176AE5] text-white md:text-[20px] rounded-[99px] w-full">Book Appointment Now</button>
 
                     </div>
 

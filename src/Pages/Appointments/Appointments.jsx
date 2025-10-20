@@ -1,0 +1,36 @@
+import { useEffect, useState } from "react";
+import { useLoaderData } from "react-router";
+import { getStoredAppointment } from "../../Utility/addToLS";
+import Appointment from "../../components/Appointment/Appointment";
+
+
+const Appointments = () => {
+    const [allAppointments, setAllAppointments] = useState([]);
+    const allData = useLoaderData();
+
+    useEffect(() => {
+        const storedAppointments = getStoredAppointment();
+
+        const appoinments = allData.filter(appoinments => storedAppointments.includes(appoinments.id));
+      
+        setAllAppointments(appoinments);
+
+    }, [])
+    
+    return (
+        <div className="max-w-7xl mx-auto">
+            <div className="text-[#0F0F0F] text-center space-y-4 mb-8">
+                <p className="text-[20px] md:text-[40px] font-extrabold">My Today Appointments</p>
+                <p>Our platform connects you with verified, experienced doctors across various specialties — all at your convenience.</p>
+            </div>
+
+            <div className="space-y-4 md:space-y-8">
+                {
+                    allAppointments.map((appoinment ,idx) => <Appointment key={idx} appoinment={appoinment}></Appointment>)
+                }
+            </div>
+        </div>
+    );
+};
+
+export default Appointments;
