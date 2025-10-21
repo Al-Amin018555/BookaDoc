@@ -3,10 +3,11 @@ import logo from '../../assets/logo.png';
 
 const Navbar = () => {
     const links = <>
-        <Link to='/'><li className='mr-2'>Home</li></Link>
-        <Link to='appointments'><li className='mr-2'>My Bookings</li></Link>
-        <li className='mr-2'>Blogs</li>
-        <li className='mr-2'>Contact Us</li>
+        <Link to='/'><li className='mr-6 text-lg hover:border-b-[2px] hover:pb-1'>Home</li></Link>
+        <Link to='appointments'><li className='mr-6 text-lg hover:border-b-[2px] hover:pb-1'>My Bookings</li></Link>
+        <Link><li className='mr-6 text-lg hover:border-b-[2px] hover:pb-1'>Blogs</li></Link>
+        <Link><li className='mr-6 text-lg hover:border-b-[2px] hover:pb-1'>Contact Us</li></Link>
+
     </>
     return (
         <div className=' sticky top-0 z-10'>
