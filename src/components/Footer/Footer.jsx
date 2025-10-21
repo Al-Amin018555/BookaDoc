@@ -5,10 +5,10 @@ import github from '../../assets/github.png'
 import { Link } from 'react-router';
 const Footer = () => {
     const links = <>
-        <Link to='/'><li className='mr-6 text-lg hover:border-b-[2px] hover:pb-1'>Home</li></Link>
-        <Link to='appointments'><li className='mr-6 text-lg hover:border-b-[2px] hover:pb-1'>My Bookings</li></Link>
-        <Link><li className='mr-6 text-lg hover:border-b-[2px] hover:pb-1'>Blogs</li></Link>
-        <Link><li className='mr-6 text-lg hover:border-b-[2px] hover:pb-1'>Contact Us</li></Link>
+        <Link to='/'><li className='text-lg hover:border-b-[2px] hover:pb-1'>Home</li></Link>
+        <Link to='appointments'><li className='text-lg hover:border-b-[2px] hover:pb-1'>My Bookings</li></Link>
+        <Link to='blogs'><li className='text-lg hover:border-b-[2px] hover:pb-1'>Blogs</li></Link>
+        <Link><li className='text-lg hover:border-b-[2px] hover:pb-1'>Contact Us</li></Link>
     </>
     return (
         <footer className="footer footer-horizontal footer-center bg-white shadow-sm text-base-content rounded py-10 px-10 lg:py-24 lg:px-20">
@@ -16,7 +16,7 @@ const Footer = () => {
                 <a className="text-3xl font-extrabold text-[#0F0F0F] flex items-center gap-2"> <img src={logo} className='w-12' alt="logo" /> BookaDoc</a>
             </div>
             <nav className="grid grid-flow-col gap-4">
-                <ul className="flex gap-4">
+                <ul className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {links}
                 </ul>
             </nav>
