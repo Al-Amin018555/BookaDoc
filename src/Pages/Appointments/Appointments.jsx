@@ -7,10 +7,11 @@ import Appointment from "../../components/Appointment/Appointment";
 const Appointments = () => {
     const [allAppointments, setAllAppointments] = useState([]);
     const allData = useLoaderData();
-
+    
     useEffect(() => {
         const storedAppointments = getStoredAppointment();
         const appoinments = allData.filter(appoinments => storedAppointments.includes(appoinments.id));
+        console.log(appoinments)
         setAllAppointments(appoinments);
 
     }, [])

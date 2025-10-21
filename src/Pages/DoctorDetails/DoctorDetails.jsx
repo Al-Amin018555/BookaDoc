@@ -10,7 +10,7 @@ const DoctorDetails = () => {
     const data = useLoaderData();
 
     const singleDoctor = data.find(doctor => doctor.id === doctorIdInt);
-    console.log(singleDoctor);
+  
     const { id, image, name, education, workplace, registration_number, availability, fee } = singleDoctor;
     return (
         <div className="max-w-7xl mx-auto space-y-4 py-7">
