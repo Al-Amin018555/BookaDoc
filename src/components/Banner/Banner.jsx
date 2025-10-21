@@ -1,4 +1,5 @@
-import bannerImg from '../../assets/banner-img-1.png'
+import bannerImg1 from '../../assets/banner-img-1.png'
+import bannerImg2 from '../../assets/banner-img-2.jpg'
 const Banner = () => {
     return (
         <div className="hero h-auto flex flex-col lg:h-[750px]">
@@ -17,9 +18,9 @@ const Banner = () => {
 
                     </div>
                     <div className='flex flex-col lg:flex-row gap-6 mt-6'>
-                        <img className='object-contain' src={bannerImg} alt="" />
-                        <img className='object-contain' src={bannerImg} alt="" />
-                        {/* <img src={bannerImg} alt="" /> */}
+                        <img className='object-contain' src={bannerImg1} alt="" />
+                        <img className='w-[578px] h-[350px] rounded-2xl'  src={bannerImg2} alt="" />
+                        
                     </div>
                 </div>
             </div>
