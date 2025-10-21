@@ -1,5 +1,5 @@
-const Appointment = ({ appoinment }) => {
-    const { name, education, fee } = appoinment;
+const Appointment = ({ appoinment,handleDelete }) => {
+    const { id,name, education, fee } = appoinment;
     return (
         <div className="max-w-7xl mx-auto">
             <div className="card bg-base-100 w-full p-4 md:p-8 rounded-2xl shadow-sm">
@@ -16,7 +16,7 @@ const Appointment = ({ appoinment }) => {
                     </div>
 
                     <div className="card-actions ">
-                        <button className="  text-[#FF0000]  hover:bg-[#FF0000] hover:text-white font-semibold cursor-pointer text-lg w-full py-3 rounded-[99px] border-1">Cancel Appointment</button>
+                        <button onClick={()=> handleDelete(id,name)} className="text-[#FF0000]  hover:bg-[#FF0000] hover:text-white font-semibold cursor-pointer text-lg w-full py-3 rounded-[99px] border-1">Cancel Appointment</button>
                     </div>
                 </div>
             </div>
