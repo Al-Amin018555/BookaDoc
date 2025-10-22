@@ -10,7 +10,7 @@ const DoctorDetails = () => {
     const data = useLoaderData();
 
     const singleDoctor = data.find(doctor => doctor.id === doctorIdInt);
-  
+
     const { id, image, name, education, workplace, registration_number, availability, fee } = singleDoctor;
     return (
         <div className="max-w-7xl mx-auto space-y-4 py-7">
@@ -78,7 +78,7 @@ const DoctorDetails = () => {
                     </div>
 
                     <div className="p-6 mt-4">
-                        <Link to='/appointments'><button onClick={() => saveToAppointment(id,name)} className="cursor-pointer py-3 b font-bold bg-[#176AE5] text-white md:text-[20px] rounded-[99px] w-full">Book Appointment Now</button></Link>
+                        <Link to='/appointments'><button onClick={() => saveToAppointment(id, name)} className="cursor-pointer py-3 b font-bold bg-[#176AE5] text-white md:text-[20px] rounded-[99px] w-full">Book Appointment Now</button></Link>
 
                     </div>
 
