@@ -1,6 +1,8 @@
 import { useLoaderData } from "react-router";
 import Banner from "../../components/Banner/Banner";
 import Doctors from "../Doctors/Doctors";
+import CountUp from "react-countup";
+import Services from "../../components/Services/Services";
 
 const Home = () => {
     const data = useLoaderData();
@@ -8,6 +10,7 @@ const Home = () => {
         <div className="bg-[#EEEEEE] p-5">
             <Banner></Banner>
             <Doctors data={data}></Doctors>
+            <Services></Services>
         </div>
     );
 };
