@@ -11,7 +11,6 @@ const Appointments = () => {
     useEffect(() => {
         const storedAppointments = getStoredAppointment();
         const appoinments = allData.filter(appoinments => storedAppointments.includes(appoinments.id));
-        console.log(appoinments)
         setAllAppointments(appoinments);
 
     }, [])
